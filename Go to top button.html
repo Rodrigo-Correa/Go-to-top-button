@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Go to top button</title>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Font Awesome 5 Introduction
+		https://www.w3schools.com/icons/fontawesome5_intro.asp
+
+		Get Started with Font Awesome
+		https://fontawesome.com/v4/get-started/
+
+		Get your own code at fontawesome.com 
+
+		Loads Font Awesome CDN -->
+		<script src="https://kit.fontawesome.com/35be336604.js" crossorigin="anonymous"></script>
+
+		<style>
+
+			/* How TO - Smooth Scroll
+			https://www.w3schools.com/howto/howto_css_smooth_scroll.asp
+
+			CSS scroll-behavior Property
+			https://www.w3schools.com/cssref/pr_scroll-behavior.asp */
+			html { scroll-behavior: smooth; }
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 14px;
+			}
+
+			h1 { font-size: 1.7em; }
+
+			h2 { font-size: 1.3em; }
+
+			a:link { text-decoration: none; }
+
+			a:visited { text-decoration: none; }
+
+			a:hover { text-decoration: underline; }
+
+			a:active { text-decoration: underline; }
+
+			/* Scroll To Top Button */
+			#myBtn {
+				display: none;
+				position: fixed;
+				bottom: 50px;
+				right: 20px;
+				z-index: 99999;
+				font-size: 20px;
+				border: none;
+				outline: none;
+				background-color: #c0c0c0;
+				color: white;
+				cursor: pointer;
+				text-align: center;
+				width: 53.5px;
+				height: 50px;
+			}
+
+			#myBtn:hover { background-color: #000000; }
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<div style="background-color: #000000;color:#ffffff;padding:30px"><h1>Go to top button</h1></div>
+
+		<div style="background-color:#f9f9f9;padding:30px 30px 2500px">
+		
+			This example demonstrates how to create a "go to top" button with a smooth scrolling effect that becomes visible 
+			<strong>when the user starts to scroll the page</strong>.<br><br>
+			This code is a better designed version with smooth scrolling effect of the go to top button example provided by the W3Schools website.<br><br>
+
+			<h2>Related URL(s):</h2>
+
+			<strong>W3Schools Online Web Tutorials</strong><br>
+			<a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a><br><br>
+
+			<strong>How TO - Scroll Back To Top Button</strong><br>
+			<a href="https://www.w3schools.com/howto/howto_js_scroll_to_top.asp" target="_blank">https://www.w3schools.com/howto/howto_js_scroll_to_top.asp</a><br><br>
+
+			<strong>Font Awesome 5 Introduction</strong><br>
+			<a href="https://www.w3schools.com/icons/fontawesome5_intro.asp" target="_blank">https://www.w3schools.com/icons/fontawesome5_intro.asp</a><br><br>
+
+			<strong>Get Started with Font Awesome</strong><br>
+			<a href="https://fontawesome.com/v4/get-started/" target="_blank">https://fontawesome.com/v4/get-started/</a><br><br>
+
+			<strong>How TO - Smooth Scroll</strong><br>
+			<a href="https://www.w3schools.com/howto/howto_css_smooth_scroll.asp" target="_blank">https://www.w3schools.com/howto/howto_css_smooth_scroll.asp</a><br><br>
+
+			<strong>CSS scroll-behavior Property</strong><br>
+			<a href="https://www.w3schools.com/cssref/pr_scroll-behavior.asp" target="_blank">https://www.w3schools.com/cssref/pr_scroll-behavior.asp</a><br><br>
+
+		</div>
+
+		<!-- Go to top button -->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+		<!-- JavaScript - Go to top button -->
+		<script>
+		
+			//Get the button
+			var mybutton = document.getElementById("myBtn");
+
+			// When the user scrolls down 20px from the top of the document, show the button
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+				if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+					mybutton.style.display = "block";
+				} else {
+					mybutton.style.display = "none";
+				}
+			}
+
+			// When the user clicks on the button, scroll to the top of the document
+			function topFunction() {
+				document.body.scrollTop = 0;
+				document.documentElement.scrollTop = 0;
+			}
+		
+		</script>
+
+	</body>
+	
+</html>
