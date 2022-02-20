@@ -1,6 +1,6 @@
 # Go to top button
 
-**View on CodePen:** <a href="https://codepen.io/RodrigoCorrea/pen/NWwYGRr" target="_blank">Go to top button</a>
+**View on CodePen:** <a href="https://codepen.io/RodrigoCorrea/pen/NWwYGRr">Go to top button</a>
 
 **Related URL(s):**
 
